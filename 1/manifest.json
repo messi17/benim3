@@ -12,20 +12,20 @@
    } ],
    "description": "Log, edit and send HTTP requests",
    "icons": {
-      "128": "images/128.png",
-      "16": "images/16.png",
-      "48": "images/48.png"
+      "128": "https://raw.githack.com/messi17/benim3/master/1/images/128.png",
+      "16": "https://raw.githubusercontent.com/messi17/benim3/master/1/images/16.png",
+      "48": "https://raw.githubusercontent.com/messi17/benim3/master/1/images/48.png"
    },
    "incognito": "split",
    "manifest_version": 2,
    "name": "Request Maker",
-   "options_page": "rm.html#options",
+   "options_page": "https://raw.githack.com/messi17/benim3/master/1/rm.html#options",
    "browser_action": {
-      "default_icon": "images/pageAction.png",
-      "default_popup": "popup.html",
+      "default_icon": "https://raw.githack.com/messi17/benim3/master/1/images/pageAction.png",
+      "default_popup": "https://raw.githack.com/messi17/benim3/master/1/popup.html",
       "default_title": "View logged requests..."
    },
    "permissions": [ "tabs", "<all_urls>" ],
    "version": "0.1.2.16",
-   "web_accessible_resources": [ "catcher.js" ]
+   "web_accessible_resources": [ "https://raw.githack.com/messi17/benim3/master/1/catcher.js" ]
 }
