@@ -137,7 +137,7 @@ addEventListener('load', function () {
 			content = content.split('\n');
 
 			// build html
-			output = '<head><link rel="stylesheet" type="text/css" href="https://raw.githack.com/messi17/benim3/master/1/view-source/view-source.css"></head>' +
+			output = '<head><link rel="stylesheet" type="text/css" href="view-source.css"></head>' +
 				'<body><div class="webkit-line-gutter-backdrop"></div><table><tbody>';
 			for (i = 0; i < content.length; i++) {
 				output += '<tr><td class="webkit-line-number"></td><td class="webkit-line-content">' + (content[i] || ' ') + '</td></tr>';

